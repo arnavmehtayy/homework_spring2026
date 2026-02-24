@@ -162,7 +162,7 @@ class PGAgent(nn.Module):
             assert values.shape == q_values.shape
 
             if self.gae_lambda is None:
-                advantages = q_values - values
+                advantages = q_values - values 
             else:
                 # TODO: implement GAE
                 batch_size = obs.shape[0]
